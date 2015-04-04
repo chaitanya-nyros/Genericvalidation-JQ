@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> REGISTRATION </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </head>
+
+    <body>
+
+        <form novalidate class="register"> 
+            <h1>Registration</h1>
+                <fieldset class="row1">
+                    <legend>Account Details</legend>
+                        <div class="div1">
+                            <p style="margin: 20px 0px 0px 0px;">
+                                <label>Email *</label>
+                                <input type="email" id="email" name="email" required="true">
+                            </p>
+                        </div>
+                        <div class="div2">
+                            <p>
+                                <label>Password*</label>
+                                <input type="password" id="password" name="password" required="true">
+                            </p>
+                            <p>
+                                <label>Repeat Password*</label>
+                                <input type="password" id="confirm" name="confirm" required="true">
+                            </p>
+                            <p>
+                                <label class="obinfo">* obligatory fields</label>
+                            </p>
+                        </div>
+                </fieldset>
+
+
+                <fieldset class="row2">
+                    <legend>Personal Details</legend>
+                        <p>
+                            <label>Name *</label>
+                            <input type="text" name="name" id="name" value="" required="true" max="50" min="2">
+                        </p>
+                        <p>
+                            <label>Phone *</label>
+                            <input type="text" class="number" name="number" id="number" value="" required="true" max="50" min="2" placeholder="Without country code">
+                        </p>
+                        <p>
+                            <label>Street</label>
+                            <input type="text" name="address" id="address" value="" required="true" max="50" min="2">
+                        </p>
+                        <p>
+                            <label>City *</label>
+                            <input type="text" name="town" id="town" value="" required="true" max="50" min="2">
+                        </p>
+                        <p>
+                            <label>Postal Code</label>
+                            <input type="text" class="postal" name="postal" id="postal" value="" required="true" max="50" min="2">
+                        </p>
+                        <p>
+                            <label>Country *</label>
+                            <select required="true">
+                                    <option value="">----SELECT-----</option>
+                                    <option value="op1">INDIA</option>
+                                    <option value="op1">USA</option>
+                                    <option value="op1">JAPAN</option>
+                                    <option value="op1">CHINA</option>
+                            </select> 
+                        </p>
+                </fieldset>
+
+                <fieldset class="row3">
+                    <legend>Further Information</legend>
+                    <p>
+                        <label>Gender *</label>
+                        <input type="radio" name="sex" id="sex"/>
+                        <label class="gender">Male</label>
+                        <input type="radio" name="sex" id="sex"/>
+                        <label class="gender">Female</label>
+                    </p><br><br>
+                    <p>
+                        <label>Birthdate *
+                        </label>
+                        <input type="date" name="date" id="date"  value="" required="true">
+                    </p><br><br>
+                    <div class="infobox"><h4>Helpful Information</h4>
+                        <p>Enter your details correctly otherwise there will be a problem in future.</p>
+                    </div>
+            </fieldset>
+
+            <fieldset class="row4">
+                <legend>Terms and Mailing
+                </legend>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I want to receive personalized offers by your site</label>
+                </p>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>Allow partners to send me personalized offers and related services</label>
+                </p>
+            </fieldset>
+
+            <div><button type="submit" class="button">Register &raquo;</button></div>
+
+        </form>
+    </body>
+</html>
+
+
+
+
+
